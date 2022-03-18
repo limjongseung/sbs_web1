@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨트 요소 - 레이아웃</title>
+    <!-- 폰트2 배달의 민족 도현체 -->
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            font-family: 'Do Hyeon', sans-serif;
+            /* 위에 있는 폰트로 설정이 가능하다 */
+
+        }
+        /*  #: id 속성을 지정하는 선택자 */
+        header {
+            background-color: lightgray;
+            height: 100px;
+        }
+        nav{
+            background-color: aqua;
+            color: white;
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: antiquewhite;
+            height: 300px;
+        }
+        section::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        footer {
+            background-color: burlywood;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        /* 반응형 적용 - 가로 사이즈 600px 이하 */
+        @media screen and (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+    <h1>SEMANTIC 태그를 이용한 레이아웃</h1>
+    <header>
+        <h1>HEADER</h1>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">menu001</a></li>
+                    <li><a href="#">menu002</a></li>
+                    <li><a href="#">menu003</a></li>
+                    <li><a href="#">menu004</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>SBS아카데미</h1>
+                <p>
+                    청춘을 일월과 듣기만 아름다우냐? 얼음이 행복스럽고 얼음에 있는 살 우리의 약동하다. 아니한 노래하며 우리 광야에서 같이, 같이, 밝은 얼마나 얼음과 것이다. 붙잡아 가는 것은 봄날의 그들을 부패뿐이다. 얼음과 주는 위하여 끝까지 타오르고 무엇을 산야에 뛰노는 우는 때문이다. 없으면, 충분히 끓는 인간의 때에, 보이는 되려니와, 것이다.
+                </p>
+                <p>
+                    청춘을 일월과 듣기만 아름다우냐? 얼음이 행복스럽고 얼음에 있는 살 우리의 약동하다. 아니한 노래하며 우리 광야에서 같이, 같이, 밝은 얼마나 얼음과 것이다. 붙잡아 가는 것은 봄날의 그들을 부패뿐이다. 얼음과 주는 위하여 끝까지 타오르고 무엇을 산야에 뛰노는 우는 때문이다. 없으면, 충분히 끓는 인간의 때에, 보이는 되려니와, 것이다.
+                </p>
+            </article>
+        </section>
+        <footer>
+            <h2>FOOTER</h2>
+        </footer>
+
+</body>
+</html>
