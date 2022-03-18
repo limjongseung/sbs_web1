@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨트 요소 - 레이아웃</title>
+    <!-- 폰트2 배달의 민족 도현체-->
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"> 
+</head> 
+<body>
+    
+        <style>
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*  #: id속성을 지정하는 선택자 */
+        header {
+            background-color: lightgray;
+            height: 100px;
+            line-height: 100px;
+            font-size: 20px;
+        }
+        nav {
+            float: left;
+            width: 20%;
+            height: 300px;
+            background-color: greenyellow;
+            padding: 20px;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: antiquewhite;
+            height: 300px;
+        }
+        section::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        footer {
+            background-color: yellow;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        /* 반응형 적용 - 가로 사이즈 600px 이하 */
+        @media screen and (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+        </style>
+
+
+
+        <h1>SEMANTIC 태그를 이용한 레이아웃</h1>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <!-- 한줄복사 : alt +shift 방향키 아래 -->
+                <li><a href="#">menu 001</a></li>
+                <li><a href="#">menu 002</a></li>
+                <li><a href="#">menu 003</a></li>
+                <li><a href="#">menu 004</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>SBS 아카데미</h1>
+            <p>
+                까닭이요, 당신은 잔디가 불러 우는 나는 못 때 북간도에 듯합니다. 아스라히 이국 경, 쉬이 별 말 버리었습니다. 새겨지는 묻힌 보고, 어머님, 봅니다. 멀리 까닭이요, 겨울이 없이
+                봅니다. 묻힌 별 무성할 멀리 오면 나의 부끄러운 불러 까닭입니다. 내일 이름과, 오면 이네들은 나는 그리고 잔디가 하나에 어머니, 봅니다. 아무 멀리 써 이웃 이런 거외다.
+            </p>
+            <p>
+                까닭이요, 당신은 잔디가 불러 우는 나는 못 때 북간도에 듯합니다. 아스라히 이국 경, 쉬이 별 말 버리었습니다. 새겨지는 묻힌 보고, 어머님, 봅니다. 멀리 까닭이요, 겨울이 없이
+                봅니다. 묻힌 별 무성할 멀리 오면 나의 부끄러운 불러 까닭입니다. 내일 이름과, 오면 이네들은 나는 그리고 잔디가 하나에 어머니, 봅니다. 아무 멀리 써 이웃 이런 거외다.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+
+    </body>
+
+</html>
