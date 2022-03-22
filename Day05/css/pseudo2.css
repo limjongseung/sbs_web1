@@ -2,7 +2,7 @@
 
 /* TODO: 여기에 작성해보세요 */
 /* 종속 선택자
--table 태그이면서, class = "firstㅇ니 요소를 선택 */
+-table 태그이면서, class = "first인 요소를 선택 */
 table.first{
     width: 100%;
     border-collapse: collapse; /* 이중실선 제거*/
