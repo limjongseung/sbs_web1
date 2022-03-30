@@ -1,0 +1,45 @@
+.container {
+    text-align: center;
+}
+
+.inner {
+    width: 70vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+.inner .item {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    height: 25vh;
+    /* vh: 창에 맞추어 비율을 적용 */
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* 이름으로 색상 적용 */
+.color2 {background-color: cornflowerblue;}
+.color3 {background-color: mediumaquamarine;}
+.color4 {background-color: slateblue;}
+/* 색상코드 색상 코드 사이트 https://flatuicolors.com*/
+.color5 {background-color: #6a89cc;}
+.color6 {background-color: #f8c291;}
+.color7 {background-color: #1e3799;}
+.color8 {background-color: #38ada9;}
+/* rgb 코드로 적용 rgba로 적용가능 */
+.color9 {background-color: rgb(246, 185, 59);}
+.color10 {background-color: rgb(235, 47, 6);}
+.color11 {background-color: rgba(183, 21, 64,1.0);}
+.color12 {background-color: rgba(96, 163, 188,1.0);}
+/* hsl로 적용 hsla로 적용가능 */
+.color13 {background-color: hsl(147, 50%, 47%);}
+.color14 {background-color: hsl(248, 53%, 58%);}
+.color15 {background-color: hsla(9, 100%, 64%, 0.2);}
+.color16 {background-color: hsla(9, 100%, 64%, 0.8);}
+
+
+
