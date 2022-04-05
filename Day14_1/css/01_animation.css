@@ -12,7 +12,7 @@
 
     /* 애니메이션 */
     animation-name: ball;                /* 애니메이션 이름 */
-    animation-duration: 3s;             /* 재생시간 */
+    animation-duration: 15s;             /* 재생시간 */
     animation-timing-function: linear;   /* 타이밍함수 */
     animation-iteration-count: infinite; /* 반복횟수 */
 }
