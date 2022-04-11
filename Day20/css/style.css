@@ -139,7 +139,7 @@ header .category .btn {
 input[name='category'] {display: none;}
 
 /* category 를 체크했을때, 사이드바를 슬라이드 */
-input#category:checked ~ .sidebar {
+input#category:checked ~.sidebar {
     left: 0;
 }
 /* 섹션-슬라이드 */

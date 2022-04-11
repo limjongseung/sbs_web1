@@ -144,7 +144,7 @@ header .category .btn {
 input[name='category'] { display: none; }
 
 /* category 를 체크했을 때, 사이드바를 슬라이드 */
-input#category:checked ~ .sidebar {
+input#category:checked ~.sidebar {
     left: 0;
 }
 
